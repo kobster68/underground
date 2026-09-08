@@ -11,8 +11,9 @@ config_version=5
 [application]
 
 config/name="underground"
+run/main_scene="uid://bpqr7ifdhyqsm"
 config/features=PackedStringArray("4.7", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://textures/icon.svg"
 
 [display]
 
