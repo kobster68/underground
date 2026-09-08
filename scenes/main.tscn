@@ -23,4 +23,5 @@ script = ExtResource("1_0wfyh")
 texture = ExtResource("1_o5qli")
 
 [node name="Camera" type="Camera2D" parent="PlayerVehicle" unique_id=997494670]
+ignore_rotation = false
 script = ExtResource("3_sugp2")
