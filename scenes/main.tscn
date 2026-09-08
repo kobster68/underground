@@ -2,8 +2,19 @@
 
 [ext_resource type="Script" uid="uid://bcp14vu4axxmc" path="res://scripts/vehicle_controller.gd" id="1_0wfyh"]
 [ext_resource type="Texture2D" uid="uid://cth4h0dkieebl" path="res://textures/84-civic-sedan.png" id="1_o5qli"]
+[ext_resource type="Script" uid="uid://bbup7whuuwdcw" path="res://scripts/camera_controller.gd" id="3_sugp2"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_8qs03"]
+size = Vector2(250, 250)
 
 [node name="Main" type="Node2D" unique_id=834653020]
+
+[node name="Terrain" type="Node2D" parent="." unique_id=384402342]
+
+[node name="TerrainSprite" type="Sprite2D" parent="Terrain" unique_id=982029583]
+texture_repeat = 2
+scale = Vector2(16, 16)
+texture = SubResource("PlaceholderTexture2D_8qs03")
 
 [node name="PlayerVehicle" type="Node2D" parent="." unique_id=290025926]
 script = ExtResource("1_0wfyh")
@@ -12,3 +23,4 @@ script = ExtResource("1_0wfyh")
 texture = ExtResource("1_o5qli")
 
 [node name="Camera" type="Camera2D" parent="PlayerVehicle" unique_id=997494670]
+script = ExtResource("3_sugp2")
