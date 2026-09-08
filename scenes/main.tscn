@@ -1,10 +1,14 @@
 [gd_scene format=3 uid="uid://bpqr7ifdhyqsm"]
 
+[ext_resource type="Script" uid="uid://bcp14vu4axxmc" path="res://scripts/vehicle_controller.gd" id="1_0wfyh"]
 [ext_resource type="Texture2D" uid="uid://cth4h0dkieebl" path="res://textures/84-civic-sedan.png" id="1_o5qli"]
 
 [node name="Main" type="Node2D" unique_id=834653020]
 
 [node name="PlayerVehicle" type="Node2D" parent="." unique_id=290025926]
+script = ExtResource("1_0wfyh")
 
 [node name="VehicleSprite" type="Sprite2D" parent="PlayerVehicle" unique_id=271968350]
 texture = ExtResource("1_o5qli")
+
+[node name="Camera" type="Camera2D" parent="PlayerVehicle" unique_id=997494670]
